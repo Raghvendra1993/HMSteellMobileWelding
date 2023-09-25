@@ -506,8 +506,8 @@ body,*,input,textarea
 	.template-padding-reset{
 		color: white;
 		cursor: pointer;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 1px;
+		padding-bottom: 1px;
 	}
 	
 	.template-page-404 .template-content h1
@@ -522,7 +522,7 @@ body,*,input,textarea
 	.template-footer,
 	.template-component-menu-default>.sf-menu>li ul
 	{
-		background-color:#222222;
+		background-color:#1B1B1B;
 	}
 		
 	.template-header .template-header-top.template-header-top-sticky,
@@ -1816,9 +1816,8 @@ form
 				{
 					top:2px;
 					display:none;
-					font-size:24px;
+					font-size:40px;
 					margin-left:10px;
-					border-width:1px;
 					border-style:solid;
 					position:relative;
 				}
@@ -1901,7 +1900,7 @@ form
 		
 		.template-content .template-section-padding-1
 		{
-			padding-bottom:60px;
+			padding-bottom:0px;
 		}
 		
 		.template-content .template-section-padding-2
@@ -4763,10 +4762,10 @@ ul.template-widget-list
 
 			.template-component-social-icon-list li a
 			{
-				width:46px;
-				height:46px;
+				width:50px;
+				height:50px;
 				display:block;
-				line-height:48px;
+				line-height:36px;
 				text-decoration:none;
 			}
 

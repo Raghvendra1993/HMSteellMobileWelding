@@ -4929,3 +4929,10 @@ ul.template-widget-list
 			font-weight:300;
 			line-height:36px;			
 		}
+
+.gallery-images {
+	width: 220px ;
+	border:8px solid #fff ;
+	border-radius: 10px;
+	height: 200px;
+}

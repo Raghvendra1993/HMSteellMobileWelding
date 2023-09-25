@@ -154,7 +154,6 @@ time,mark,audio,video
 	font-size:100%;
 	vertical-align:baseline;
 	background-color: #1B1B1B;
-	text: white
 }
 
 article,aside,details,figcaption,figure,
@@ -251,8 +250,6 @@ textarea
 /******************************************************************************/
 /* Default																	  */
 /******************************************************************************/
-
-
 
 .template-main
 {
@@ -501,14 +498,6 @@ body,*,input,textarea
 	{
 		color:#1B1B1B;
 	}
-
-	a, 
-	.template-padding-reset{
-		color: white;
-		cursor: pointer;
-		padding-top: 1px;
-		padding-bottom: 1px;
-	}
 	
 	.template-page-404 .template-content h1
 	{
@@ -522,7 +511,7 @@ body,*,input,textarea
 	.template-footer,
 	.template-component-menu-default>.sf-menu>li ul
 	{
-		background-color:#1B1B1B;
+		background-color:#222222;
 	}
 		
 	.template-header .template-header-top.template-header-top-sticky,
@@ -629,19 +618,19 @@ body,*,input,textarea
 	.tparrows.preview1::after,
 	.tp-bullets.preview1 .tp-bullet
 	{
-		background:#a1a1a1;
+		background:rgba(0,0,0,0.15);
 	}
 	
 	.fancybox-skin
 	{
-		background:#1B1B1B;
+		background:#FFFFFF;
 	}
 	
 	.tparrows.preview1:hover::after,
 	.tp-bullets.preview1 .tp-bullet:hover,
 	.tp-bullets.preview1 .tp-bullet.selected 
 	{
-		background: white !important;
+		background:#FFFFFF !important;
 	}
 
 	.template-component-button,
@@ -1123,7 +1112,6 @@ h4
 	line-height:30px;
 	letter-spacing:2px;
 	margin-bottom:30px;
-	margin-top: 30px;
 }
 
 h5,
@@ -1181,7 +1169,7 @@ form
 		border-width:1px;
 		border-style:solid;
 		padding:10px 15px 10px 15px;
-		-webkit-box-sizing:border-box;‌
+		-webkit-box-sizing:border-box;‌​
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
 	}
@@ -1816,8 +1804,9 @@ form
 				{
 					top:2px;
 					display:none;
-					font-size:40px;
+					font-size:24px;
 					margin-left:10px;
+					border-width:1px;
 					border-style:solid;
 					position:relative;
 				}
@@ -1890,7 +1879,7 @@ form
 
 		.template-content .template-section
 		{
-			padding:80px 0px 120px 0px;
+			padding:110px 0px 120px 0px;
 		}
 		
 		.template-content .template-section-padding-reset
@@ -1900,7 +1889,7 @@ form
 		
 		.template-content .template-section-padding-1
 		{
-			padding-bottom:0px;
+			padding-bottom:60px;
 		}
 		
 		.template-content .template-section-padding-2
@@ -4264,7 +4253,7 @@ ul.template-widget-list
 						line-height:28px;
 						letter-spacing:1px;
 						text-transform:uppercase;
-						padding:30px 20px 30px 20px;
+						padding:36px 20px 36px 20px;
 					}
 					
 						.template-component-menu-default>.sf-menu>li ul
@@ -4762,10 +4751,10 @@ ul.template-widget-list
 
 			.template-component-social-icon-list li a
 			{
-				width:50px;
-				height:50px;
+				width:46px;
+				height:46px;
 				display:block;
-				line-height:36px;
+				line-height:48px;
 				text-decoration:none;
 			}
 
@@ -4932,19 +4921,3 @@ ul.template-widget-list
 			font-weight:300;
 			line-height:36px;			
 		}
-
-.template-home-popup-title{
-	margin-bottom: 10px;
-	margin-top: 20px;
-}
-
-.template-home-popup-content{
-	padding-bottom: 0px;
-}
-
-.gallery-images {
-	width: 220px ;
-	 border:8px solid #fff ;
-	  border-radius: 10px;
-	  height: 200px;
-}

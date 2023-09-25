@@ -196,13 +196,17 @@ website:   	http://www.themepunch.com
 	display: block;
 }
 
-
 .rev_slider .tp-mask-wrap .tp-caption,
 .rev_slider .tp-mask-wrap *:last-child,
 .wpb_text_column .rev_slider .tp-mask-wrap .tp-caption,
 .wpb_text_column .rev_slider .tp-mask-wrap *:last-child{
 	margin-bottom:0;
 
+}
+
+.tp-mask-wrap, .tp-resizeme{
+	background-color: transparent;
+	text-align: center;
 }
 
 	

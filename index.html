@@ -1,917 +1,1391 @@
+<!DOCTYPE html>
 
-		<!DOCTYPE html>
+<html>
+  <head>
+    <title>HM Steel & Mobile Welding</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
-		<html>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-			<head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900&amp;subset=latin,latin-ext"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=PT+Serif:700italic,700,400italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic"
+    />
 
-				<title>HM Steel & Mobile Welding</title>
-				<meta name="keywords" content="" />
-				<meta name="description" content="" />		
+    <link rel="stylesheet" type="text/css" href="style/jquery.qtip.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/superfish.css" />
+    <link rel="stylesheet" type="text/css" href="style/flexnav.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/DateTimePicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/fancybox/jquery.fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/fancybox/helpers/jquery.fancybox-buttons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/revolution/layers.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/revolution/settings.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/revolution/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/base.css" />
+    <link rel="stylesheet" type="text/css" href="style/responsive.css" />
 
-				<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+  </head>
 
-				<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900&amp;subset=latin,latin-ext">
-				<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif:700italic,700,400italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic">
-				
-				<link rel="stylesheet" type="text/css" href="style/jquery.qtip.css"/>
-				<link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css"/>
-				<link rel="stylesheet" type="text/css" href="style/superfish.css"/>
-				<link rel="stylesheet" type="text/css" href="style/flexnav.css"/>
-				<link rel="stylesheet" type="text/css" href="style/DateTimePicker.min.css"/>
-				<link rel="stylesheet" type="text/css" href="style/fancybox/jquery.fancybox.css"/> 
-				<link rel="stylesheet" type="text/css" href="style/fancybox/helpers/jquery.fancybox-buttons.css"/>
-				<link rel="stylesheet" type="text/css" href="style/revolution/layers.css"/> 
-				<link rel="stylesheet" type="text/css" href="style/revolution/settings.css"/> 
-				<link rel="stylesheet" type="text/css" href="style/revolution/navigation.css"/> 
-				<link rel="stylesheet" type="text/css" href="style/base.css"/> 
-				<link rel="stylesheet" type="text/css" href="style/responsive.css"/> 
-				
-				<script type="text/javascript" src="script/jquery.min.js"></script>
+  <body class="template-page-home">
+    <div class="template-header">
+      <div class="template-header-top">
+        <div class="template-header-top-logo">
+          <a href="index.html" title="">
+            <img
+              src="media/image/logo.png"
+              alt=""
+              class="template-logo"
+              style="width: 80px; height: 80px"
+            />
+            <img
+              src="media/image/logo_sticky.png"
+              alt=""
+              class="template-logo template-logo-sticky"
+              style="width: 80px; height: 80px"
+            />
+          </a>
+        </div>
+        <div class="template-header-top-menu template-main" style="width: auto">
+          <nav>
+            <div class="template-component-menu-default">
+              <ul class="sf-menu">
+                <li>
+                  <a href="index.html" class="template-state-selected">Home</a>
+                </li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav>
+            <!-- Mobile menu-->
+            <div class="template-component-menu-responsive">
+              <ul class="flexnav">
+                <li>
+                  <a href="#"
+                    ><span
+                      class="touch-button template-icon-meta-arrow-large-tb template-component-menu-button-close"
+                    ></span
+                    >&nbsp;</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html" class="template-state-selected">Home</a>
+                </li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+              $(".template-header-top").templateHeader();
+            });
+          </script>
+        </div>
+        <div
+          class="template-header-top-icon-list template-component-social-icon-list-1"
+        >
+          <ul class="template-component-social-icon-list">
+            <li><a href="#" class="template-icon-meta-menu"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="template-header-bottom">
+        <div
+          id="rev_slider_wrapper"
+          class="rev_slider_wrapper fullwidthbanner-container"
+        >
+          <div
+            id="rev_slider"
+            class="rev_slider fullwidthabanner"
+            style="display: none"
+            data-version="5.0.7"
+          >
+            <ul>
+              <!-- Slide 1 -->
+              <li
+                data-index="slide-1"
+                data-transition="fade"
+                data-slotamount="1"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="500"
+                data-rotate="0"
+                data-delay="6000"
+              >
+                <!-- Main image -->
+                <img
+                  src="media/image/slider/slider_01.jpg"
+                  alt="slide-1"
+                  data-bgfit="cover"
+                  data-bgposition="center bottom"
+                />
+                <div
+                  class="tp-caption tp-resizeme hero-text"
+                  data-x="['center','center','center','center','center']"
+                  data-hoffset="['0','0','0','0','0']"
+                  data-y="['middle','middle','middle','middle','middle']"
+                  data-voffset="['-41','-35','-29','17','26']"
+                  data-fontsize="['30','28','20','15','12']"
+                  data-fontweight="['900','900','900','700','700']"
+                  data-lineheight="['62','55','43','29','32']"
+                  data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
+                  data-width="['auto','auto','auto','auto','300']"
+                  data-height="auto"
+                  data-basealign="grid"
+                  data-transform_idle="o:1;"
+                  data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="
+                    letter-spacing: 2px;
+                    line-height: 40;
+                    text-align: center;
+                  "
+                >
+                  WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
+                  <br />
+                  CALL NOW! +61 499325824
+                </div>
+              </li>
 
-			</head>
+              <!-- Slide 2 -->
+              <li
+                data-index="slide-2"
+                data-transition="fade"
+                data-slotamount="1"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="500"
+                data-rotate="0"
+                data-delay="6000"
+              >
+                <!-- Main image -->
+                <img
+                  src="media/image/slider/slider_02.jpg"
+                  alt="slide-2"
+                  data-bgfit="cover"
+                  data-bgposition="center bottom"
+                />
+                <div
+                  class="tp-caption tp-resizeme"
+                  data-x="['center','center','center','center','center']"
+                  data-hoffset="['0','0','0','0','0']"
+                  data-y="['middle','middle','middle','middle','middle']"
+                  data-voffset="['-41','-35','-29','17','26']"
+                  data-fontsize="['30','28','20','15','12']"
+                  data-fontweight="['900','900','900','700','700']"
+                  data-lineheight="['62','55','43','29','32']"
+                  data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
+                  data-width="['auto','auto','auto','auto','300']"
+                  data-height="auto"
+                  data-basealign="grid"
+                  data-transform_idle="o:1;"
+                  data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="letter-spacing: 4px"
+                >
+                  WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
+                  <br />
+                  CALL NOW! +61 499325824
+                </div>
+              </li>
 
-			<body class="template-page-home">
-				<div class="template-header">
-					<div class="template-header-top">
-						<div class="template-header-top-logo">
-							<a href="index.html" title="">
-								<img src="media/image/logo.png" alt="" class="template-logo" style="width: 80px;height: 80px;"/>
-								<img src="media/image/logo_sticky.png" alt="" class="template-logo template-logo-sticky" style="width: 80px;height: 80px;"/>
-							</a>
-						</div>
-						<div class="template-header-top-menu template-main" style="width: auto;">
-							<nav>
-								<div class="template-component-menu-default">
-									<ul class="sf-menu">
-										<li><a href="index.html" class="template-state-selected">Home</a></li>
-										<li><a href="service.html">Services</a></li>
-										<li><a href="gallery.html">Gallery</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</div>
-							</nav>
-							<nav>
-								<!-- Mobile menu-->
-								<div class="template-component-menu-responsive">
-									<ul class="flexnav">
-										<li><a href="#"><span class="touch-button template-icon-meta-arrow-large-tb template-component-menu-button-close"></span>&nbsp;</a></li>
-										<li><a href="index.html" class="template-state-selected">Home</a></li>
-										<li><a href="service.html">Services</a></li>
-										<li><a href="gallery.html">Gallery</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>							
-								</div>
-							</nav>
-							<script type="text/javascript">
-								jQuery(document).ready(function($)
-								{
-									$('.template-header-top').templateHeader();
-								});
-							</script>
-						</div>
-						<div class="template-header-top-icon-list template-component-social-icon-list-1">
-							<ul class="template-component-social-icon-list">
-								<li><a href="#" class="template-icon-meta-menu"></a></li>
-							</ul>
-						</div>
+              <!-- Slide 3 -->
+              <li
+                data-index="slide-3"
+                data-transition="fade"
+                data-slotamount="1"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="500"
+                data-rotate="0"
+                data-delay="6000"
+              >
+                <!-- Main image -->
+                <img
+                  src="media/image/slider/slider_03.jpg"
+                  alt="slide-3"
+                  data-bgfit="cover"
+                  data-bgposition="center bottom"
+                />
+                <div
+                  class="tp-caption tp-resizeme"
+                  data-x="['center','center','center','center','center']"
+                  data-hoffset="['0','0','0','0','0']"
+                  data-y="['middle','middle','middle','middle','middle']"
+                  data-voffset="['-41','-35','-29','17','26']"
+                  data-fontsize="['30','28','20','15','12']"
+                  data-fontweight="['900','900','900','700','700']"
+                  data-lineheight="['62','55','43','29','32']"
+                  data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
+                  data-width="['auto','auto','auto','auto','300']"
+                  data-height="auto"
+                  data-basealign="grid"
+                  data-transform_idle="o:1;"
+                  data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="letter-spacing: 4px"
+                >
+                  WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
+                  <br />
+                  CALL NOW! +61 499325824
+                </div>
+              </li>
+              <li
+                data-index="slide-4"
+                data-transition="fade"
+                data-slotamount="1"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="500"
+                data-rotate="0"
+                data-delay="6000"
+              >
+                <!-- Main image -->
+                <img
+                  src="media/image/slider/slider_04.jpg"
+                  alt="slide-1"
+                  data-bgfit="cover"
+                  data-bgposition="center bottom"
+                />
+                <div
+                  class="tp-caption tp-resizeme"
+                  data-x="['center','center','center','center','center']"
+                  data-hoffset="['0','0','0','0','0']"
+                  data-y="['middle','middle','middle','middle','middle']"
+                  data-voffset="['-41','-35','-29','17','26']"
+                  data-fontsize="['30','28','20','15','12']"
+                  data-fontweight="['900','900','900','700','700']"
+                  data-lineheight="['62','55','43','29','32']"
+                  data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
+                  data-width="['auto','auto','auto','auto','300']"
+                  data-height="auto"
+                  data-basealign="grid"
+                  data-transform_idle="o:1;"
+                  data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="letter-spacing: 4px"
+                >
+                  WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
+                  <br />
+                  CALL NOW! +61 499325824
+                </div>
+              </li>
+              <li
+                data-index="slide-5"
+                data-transition="fade"
+                data-slotamount="1"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="500"
+                data-rotate="0"
+                data-delay="6000"
+              >
+                <!-- Main image -->
+                <img
+                  src="media/image/slider/slider_05.jpg"
+                  alt="slide-1"
+                  data-bgfit="cover"
+                  data-bgposition="center bottom"
+                />
+                <div
+                  class="tp-caption tp-resizeme"
+                  data-x="['center','center','center','center','center']"
+                  data-hoffset="['0','0','0','0','0']"
+                  data-y="['middle','middle','middle','middle','middle']"
+                  data-voffset="['-41','-35','-29','17','26']"
+                  data-fontsize="['30','28','20','15','12']"
+                  data-fontweight="['900','900','900','700','700']"
+                  data-lineheight="['62','55','43','29','32']"
+                  data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
+                  data-width="['auto','auto','auto','auto','300']"
+                  data-height="auto"
+                  data-basealign="grid"
+                  data-transform_idle="o:1;"
+                  data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
+                  data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                  data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                  data-start="1000"
+                  data-splitin="none"
+                  data-splitout="none"
+                  data-responsive_offset="on"
+                  style="letter-spacing: 4px"
+                >
+                  WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
+                  <br />
+                  CALL NOW! +61 499325824
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--/-->
 
-					</div>				
-					<div class="template-header-bottom">
-								
-						<div id="rev_slider_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
-							
-							<div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-								<ul>
-									<!-- Slide 1 -->
-									<li data-index="slide-1" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
-										<!-- Main image -->
-										<img src="media/image/slider/slider_01.jpg" alt="slide-1" data-bgfit="cover" data-bgposition="center bottom">
-										<div class="tp-caption tp-resizeme hero-text" 
-											data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" 
-											data-y="['middle','middle','middle','middle','middle']" data-voffset="['-41','-35','-29','17','26']"
-											data-fontsize="['30','28','20','15','12']"
-											data-fontweight="['900','900','900','700','700']"
-											data-lineheight="['62','55','43','29','32']"
-											data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
-											data-width="['auto','auto','auto','auto','300']"
-											data-height="auto"
-											data-basealign="grid"
+        <!-- Slider JS -->
+        <script type="text/javascript">
+          var tpj = jQuery;
+          var revapi4;
+          tpj(document).ready(function () {
+            if (tpj("#rev_slider").revolution == undefined) {
+              revslider_showDoubleJqueryError("#rev_slider");
+            } else {
+              revapi4 = tpj("#rev_slider")
+                .show()
+                .revolution({
+                  jsFileLocation: "script/",
+                  sliderType: "standard",
+                  sliderLayout: "fullwidth",
+                  dottedOverlay: "none",
+                  delay: 9000,
+                  responsiveLevels: [1920, 1189, 959, 767, 479],
+                  gridwidth: [1170, 940, 750, 460, 300],
+                  gridheight: [750, 600, 550, 550, 550],
+                  lazyType: "none",
+                  navigation: {
+                    keyboardNavigation: "on",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "on",
+                    keyboard_direction: "horizontal",
+                    touch: {
+                      touchenabled: "on",
+                      swipe_treshold: 75,
+                      swipe_min_touches: 1,
+                      drag_block_vertical: false,
+                      swipe_direction: "horizontal",
+                    },
+                    arrows: {
+                      style: "preview1",
+                      enable: true,
+                      hide_onmobile: true,
+                      hide_onleave: true,
+                      hide_delay: 200,
+                      hide_delay_mobile: 1500,
+                      hide_under: 0,
+                      hide_over: 9999,
+                      tmp: "",
+                      left: {
+                        h_align: "left",
+                        v_align: "center",
+                        h_offset: 0,
+                        v_offset: 0,
+                      },
+                      right: {
+                        h_align: "right",
+                        v_align: "center",
+                        h_offset: 0,
+                        v_offset: 0,
+                      },
+                    },
+                    bullets: {
+                      style: "preview1",
+                      enable: true,
+                      hide_onmobile: true,
+                      hide_onleave: true,
+                      hide_delay: 200,
+                      hide_delay_mobile: 1500,
+                      hide_under: 0,
+                      hide_over: 9999,
+                      direction: "horizontal",
+                      h_align: "center",
+                      v_align: "bottom",
+                      space: 10,
+                      h_offset: 0,
+                      v_offset: 20,
+                      tmp: '<span class="tp-bullet-image"></span><span class="tp-bullet-title"></span>',
+                    },
+                  },
+                  shadow: 0,
+                  spinner: "spinner1",
+                  stopAfterLoops: -1,
+                  stopAtSlide: -1,
+                  disableProgressBar: "on",
+                  shuffle: "off",
+                  autoHeight: "off",
+                  hideSliderAtLimit: 0,
+                  hideCaptionAtLimit: 0,
+                  hideAllCaptionAtLilmit: 0,
+                  debugMode: false,
+                  fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                  },
+                });
+            }
+          }); /*ready*/
+        </script>
+      </div>
+    </div>
 
-											data-transform_idle="o:1;"
+    <!-- Content -->
+    <div class="template-content">
+      <div
+        class="template-component-header-subheader"
+        style="text-align: center; margin-top: 50px"
+      >
+        <h2>Our Services</h2>
+        <div></div>
+      </div>
+      <div
+        class="template-section template-section-padding-1 template-clear-fix template-main"
+      >
+        <ul class="template-layout-33x33x33 template-clear-fix">
+          <li class="template-layout-column-left">
+            <div class="template-component-image">
+              <!-- <a href="media/image/sample/460x306/mobile.jpg"class="template-fancybox" data-fancybox-group="gallery-1"> -->
+              <img src="media/image/sample/460x306/mobile.jpg" alt="" />
+              <!-- </a>  -->
+              <h3 class="template-home-popup-title">Mobile Welding</h3>
+              <h6>&#8226; &nbsp; Welding</h6>
+              <h6>&#8226; &nbsp; Construction</h6>
+              <h6>&#8226; &nbsp; Steel Repairs</h6>
+              <h6>&#8226; &nbsp; Industrial</h6>
+              <a
+                href="media/image/sample/460x306/mobile.jpg"
+                class="template-fancybox"
+                data-fancybox-group="gallery-1"
+              >
+                <h6>Read More...</h6>
+              </a>
+              <div class="template-component-image-description">
+                <h3 class="template-home-popup-title">Mobile Welding</h3>
+                <h4 class="template-home-popup-title">Welding</h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; On-site welding &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Mobile Welding &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Pipe Welds Post Heat
+                </p>
+                <br />
 
-											data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
-											data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+                <h6 class="template-home-popup-title">construction</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; On-site structural welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Earthmoving & Civil Construction Equipment
+                  Repairs: Truck, Trailer, Bobcat, Forklift
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Domestic & residential repairs of gates, rails,
+                  trailers, boats, balustrades, framing, outdoor furniture
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Contract (short/long term) & Piece Work service
+                  – 1st Class welders available
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Light fabrication services
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Emergency 24/7 call out service
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Aluminium, Stainless and Mild steel
+                  fabrication, repair and welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Welding Tickets
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Construction Induction (white card)
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Elevating Work Platform ( EWp)
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; High Risk Work
+                </p>
+                <br />
 
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-											data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                <h6 class="template-home-popup-title">Steel Repairs</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Food Grade Stainless Steel repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Auto & Motorcycle repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural Breakdown of Equipment /
+                  Installations
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Commercial Sprinkler Pipe repairs
+                </p>
+                <br />
 
-											data-start="1000"
+                <h6 class="template-home-popup-title">Industrial</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; TIG / MIG / ARC / Plastic / Specialized welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Machinery repair
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Staircases
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp;Furniture fabrication
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Factory maintenance
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Food industry - stainless steel welding and
+                  repair
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural frames
+                </p>
+                <br />
+              </div>
+            </div>
+          </li>
 
-											data-splitin="none" 
-											data-splitout="none" 
-											data-responsive_offset="on"
-											style="letter-spacing: 2px; line-height: 40; text-align: center;"
-											>
-											WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
-											<br> CALL NOW! +61 499325824
-										</div>
+          <!-- Center column -->
+          <li class="template-layout-column-center">
+            <div class="template-component-image">
+              <img
+                src="media/image/sample/460x306/steel_fabrication.jpg"
+                alt=""
+              />
+              <h3 class="template-home-popup-title">Steel Fabrication</h3>
+              <h6>&#8226; &nbsp; Welding</h6>
+              <h6>&#8226; &nbsp; Construction</h6>
+              <h6>&#8226; &nbsp; Steel Repairs</h6>
+              <h6>&#8226; &nbsp; Industrial</h6>
+              <a
+                href="media/image/sample/460x306/steel_fabrication.jpg"
+                class="template-fancybox"
+                data-fancybox-group="gallery-1"
+              >
+                <h6>Read More...</h6>
+              </a>
+              <div class="template-component-image-description">
+                <h3>Steel Fabrication</h3>
+                <h4 class="template-home-popup-title">Welding</h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; On-site welding &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Mobile Welding &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Pipe Welds Post Heat
+                </p>
+                <br />
 
-									</li>
+                <h6 class="template-home-popup-title">construction</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; On-site structural welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Earthmoving & Civil Construction Equipment
+                  Repairs: Truck, Trailer, Bobcat, Forklift
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Domestic & residential repairs of gates, rails,
+                  trailers, boats, balustrades, framing, outdoor furniture
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Contract (short/long term) & Piece Work service
+                  – 1st Class welders available
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Light fabrication services
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Emergency 24/7 call out service
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Aluminium, Stainless and Mild steel
+                  fabrication, repair and welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Welding Tickets
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Construction Induction (white card)
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Elevating Work Platform ( EWp)
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; High Risk Work
+                </p>
+                <br />
 
-									<!-- Slide 2 -->
-									<li data-index="slide-2" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
-										<!-- Main image -->
-										<img src="media/image/slider/slider_02.jpg" alt="slide-2" data-bgfit="cover" data-bgposition="center bottom">
-										<div class="tp-caption tp-resizeme" 
-											data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" 
-											data-y="['middle','middle','middle','middle','middle']" data-voffset="['-41','-35','-29','17','26']"
-											data-fontsize="['30','28','20','15','12']"
-											data-fontweight="['900','900','900','700','700']"
-											data-lineheight="['62','55','43','29','32']"
-											data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
-											data-width="['auto','auto','auto','auto','300']"
-											data-height="auto"
-											data-basealign="grid"
+                <h6 class="template-home-popup-title">Steel Repairs</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Food Grade Stainless Steel repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Auto & Motorcycle repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural repairs
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural Breakdown of Equipment /
+                  Installations
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Commercial Sprinkler Pipe repairs
+                </p>
+                <br />
 
-											data-transform_idle="o:1;"
+                <h6 class="template-home-popup-title">Industrial</h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; TIG / MIG / ARC / Plastic / Specialized welding
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Machinery repair
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Staircases
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp;Furniture fabrication
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Factory maintenance
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Food industry - stainless steel welding and
+                  repair
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Structural frames
+                </p>
+                <br />
+              </div>
+            </div>
+          </li>
 
-											data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
-											data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+          <!-- Right column -->
+          <li class="template-layout-column-right">
+            <div class="template-component-image">
+              <img src="media/image/sample/460x306/sliding_gate.jpg" alt="" />
+              <h3 class="template-home-popup-title">Sliding Door</h3>
+              <h6>&#8226; &nbsp; Manual/Automatic Sliding Gate</h6>
+              <h6>&#8226; &nbsp; Swing Gate</h6>
+              <a
+                href="media/image/sample/460x306/sliding_gate.jpg"
+                class="template-fancybox"
+                data-fancybox-group="gallery-1"
+              >
+                <h6>Read More...</h6>
+              </a>
+              <div class="template-component-image-description">
+                <h3 class="template-home-popup-title">Sliding Door</h3>
+                <h6 class="template-home-popup-title">
+                  Manual/Automatic Sliding Gate
+                </h6>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; NEOS 400/600 &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; CROSS 30E &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; CROSS 18 AND CROSS 19
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Geared motor for frequent duty and built-in
+                  control board, Opening and closing speed up to 25 cm/sec, Low
+                  consumption and energy-saving mode. Ideal for industrial and
+                  public entrances, Easy to install, Magnetic mechanical stop.
+                </p>
+                <br />
 
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-											data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                <h4 class="template-home-popup-title">Swing Gate</h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Cubic 6H &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Obbi External Automated System &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Luxo System
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; ARC External Automated System
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; High safety guaranteed by 24V DC power supply
+                  to the geared motor, very elegant and simple design
+                </p>
+                <br />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="template-layout-33x33x33 template-clear-fix">
+          <!-- Left column -->
+          <li class="template-layout-column-left">
+            <div class="template-component-image">
+              <img src="media/image/sample/460x306/workbench.jpg" alt="" />
+              <h3 class="template-home-popup-title">Workbench</h3>
+              <h6>&#8226; &nbsp; Workbench and Trolleys</h6>
+              <h6>&#8226; &nbsp; Specifications</h6>
+              <h6>&#8226; &nbsp; Additional Services</h6>
+              <a
+                href="media/image/sample/460x306/workbench.jpg"
+                class="template-fancybox"
+                data-fancybox-group="gallery-1"
+              >
+                <h6>Read More...</h6>
+              </a>
+              <div class="template-component-image-description">
+                <h3 class="template-home-popup-title">Workbench</h3>
+                <h4 class="template-home-popup-title">
+                  Workbench and Trolleys
+                </h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Heavy Duty workbench &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Light Weight workbench &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Trollies
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Steel Frames
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Steel Shelves
+                </p>
+                <br />
 
-											data-start="1000"
+                <h4 class="template-home-popup-title">Specifications</h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Dimensions: custom any size &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Steel Sheet thickness: 3mm or 5mm &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Steel: 40x40 mm or 50x50 mm
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; SHS Steel Thickness: 1.6 and 2 mm depending on
+                  load
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Bench Top: Steel Sheet Or MDF top
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Bottom Shelf: steel sheet or mdf
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Wheel Type: Swivel and Brake
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Colours: As per customer need
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; 100% Australian Made
+                </p>
+                <br />
 
-											data-splitin="none" 
-											data-splitout="none" 
-											data-responsive_offset="on"
-											style="letter-spacing: 4px;"
-											>
-											WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
-											<br> CALL NOW! +61 499325824
-										</div>
-									</li>
+                <h4 class="template-home-popup-title">Additional Services</h4>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Powder coating &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Splash Back &nbsp; &nbsp;
+                </p>
+                <p class="template-home-popup-content">&#8226; &nbsp; Vice</p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Galvanizing
+                </p>
+                <p class="template-home-popup-content">
+                  &#8226; &nbsp; Pegboard
+                </p>
+                <p class="template-home-popup-content">
+                  Above specifications can be customized as per customer need
+                  and request
+                </p>
+                <br />
+              </div>
+            </div>
+          </li>
 
-									<!-- Slide 3 -->
-									<li data-index="slide-3" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
-										<!-- Main image -->
-										<img src="media/image/slider/slider_03.jpg" alt="slide-3" data-bgfit="cover" data-bgposition="center bottom">
-										<div class="tp-caption tp-resizeme" 
-											data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" 
-											data-y="['middle','middle','middle','middle','middle']" data-voffset="['-41','-35','-29','17','26']"
-											data-fontsize="['30','28','20','15','12']"
-											data-fontweight="['900','900','900','700','700']"
-											data-lineheight="['62','55','43','29','32']"
-											data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
-											data-width="['auto','auto','auto','auto','300']"
-											data-height="auto"
-											data-basealign="grid"
+          <!-- Center column -->
+          <li class="template-layout-column-center">
+            <div class="template-component-image">
+              <img src="media/image/sample/460x306/precast.jpg" alt="" />
+              <h3 class="template-home-popup-title">
+                PRECAST CONNECTION WELDING
+              </h3>
+              <h6>
+                A "precast connection weld" refers to the welding process used
+                in connecting precast concrete elements or components together.
+              </h6>
+              <a
+                href="media/image/sample/460x306/precast.jpg"
+                class="template-fancybox"
+                data-fancybox-group="gallery-1"
+              >
+                <h6>Read More...</h6>
+              </a>
+              <div class="template-component-image-description">
+                <h3 class="template-home-popup-title">
+                  PRECAST CONNECTION WELDING
+                </h3>
+                <p class="template-padding-reset">
+                  A "precast connection weld" refers to the welding process used
+                  in connecting precast concrete elements or components
+                  together. Precast concrete is a construction technique where
+                  concrete elements, such as beams, columns, panels, and slabs,
+                  are cast in a controlled environment (typically a factory)
+                  before being transported to a construction site and assembled
+                  to create a building or structure.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-											data-transform_idle="o:1;"
+      <!-- Section -->
+      <div class="template-section template-clear-fix template-main">
+        <!-- Header + subheader -->
+        <div class="template-component-header-subheader">
+          <h2>Our gallery</h2>
+          <div></div>
+          <!-- <span>Latest Projects</span> -->
+        </div>
 
-											data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
-											data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+        <!-- Gallery -->
+        <div class="template-component-gallery">
+          <ul class="template-component-gallery-filter-list">
+            <li>
+              <a
+                href="#all-images"
+                class="template-filter-all template-state-selected"
+                >All</a
+              >
+            </li>
+            <li>
+              <a href="#mobile-welding" class="template-filter-mobile-welding"
+                >Mobile Welding</a
+              >
+            </li>
+            <li>
+              <a
+                href="#steel-fabrication"
+                class="template-filter-steel-fabrication"
+                >Steel Fabrication</a
+              >
+            </li>
+            <li>
+              <a href="#sliding-door" class="template-filter-sliding-door"
+                >Sliding Door</a
+              >
+            </li>
+            <li>
+              <a href="#workbench" class="template-filter-workbench"
+                >Workbench</a
+              >
+            </li>
+            <li>
+              <a
+                href="#precast-connection-welding"
+                class="template-filter-precast-connection-welding"
+                >PRECAST CONNECTION WELDING</a
+              >
+            </li>
+          </ul>
 
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-											data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+          <!-- Images list -->
+          <ul class="template-component-gallery-image-list">
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-1.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-2.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-3.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-4.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-5.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-6.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-7.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-8.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-9.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-10.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-mobile-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/mobile-welding-11.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-1.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-2.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-3.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-4.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-5.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-precast-connection-welding">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/precast-6.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-steel-fabrication">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/steel-1.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-steel-fabrication">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/steel-2.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-steel-fabrication">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/steel-3.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-steel-fabrication">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/steel-4.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
 
-											data-start="1000"
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/work.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-1.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-2.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-3.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-4.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-5.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-6.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-7.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-8.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-workbench">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/workbench-9.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-sliding-door">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/sliding-1.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-sliding-door">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/sliding-2.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="template-filter-sliding-door">
+              <div class="template-component-image">
+                <img
+                  src="media/image/gallery/sliding-3.jpg"
+                  class="gallery-images"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
 
-											data-splitin="none" 
-											data-splitout="none" 
-											data-responsive_offset="on"
-											style="letter-spacing: 4px;"
-											>
-											WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
-											<br> CALL NOW! +61 499325824
-										</div>
-									</li>
-									<li data-index="slide-4" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
-										<!-- Main image -->
-										<img src="media/image/slider/slider_04.jpg" alt="slide-1" data-bgfit="cover" data-bgposition="center bottom">
-										<div class="tp-caption tp-resizeme" 
-											data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" 
-											data-y="['middle','middle','middle','middle','middle']" data-voffset="['-41','-35','-29','17','26']"
-											data-fontsize="['30','28','20','15','12']"
-											data-fontweight="['900','900','900','700','700']"
-											data-lineheight="['62','55','43','29','32']"
-											data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
-											data-width="['auto','auto','auto','auto','300']"
-											data-height="auto"
-											data-basealign="grid"
+        <!-- Button -->
+        <div
+          class="template-align-center"
+          style="display: flex; justify-content: center"
+        >
+          <a href="gallery.html" class="template-component-button"
+            >Browse More Projects</a
+          >
+        </div>
+      </div>
 
-											data-transform_idle="o:1;"
+      <!-- Section -->
+      <div
+        class="template-section template-section-padding-reset template-clear-fix"
+      >
+        <!-- Flex layout 50x50% -->
+        <div class="template-align-center">
+          <!-- Left column -->
+          <div>
+            <!-- Header + subheader -->
+            <div class="template-component-header-subheader">
+              <h2>Testimonials</h2>
+              <div></div>
+              <span>Our customers love us</span>
+            </div>
 
-											data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
-											data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
+            <!-- Space -->
+            <div
+              class="template-component-space template-component-space-2"
+            ></div>
 
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-											data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-
-											data-start="1000"
-
-											data-splitin="none" 
-											data-splitout="none" 
-											data-responsive_offset="on"
-											style="letter-spacing: 4px;"
-											>
-											WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
-											<br> CALL NOW! +61 499325824
-										</div>
-									</li>
-									<li data-index="slide-5" data-transition="fade" data-slotamount="1" data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-delay="6000">
-										<!-- Main image -->
-										<img src="media/image/slider/slider_05.jpg" alt="slide-1" data-bgfit="cover" data-bgposition="center bottom">
-										<div class="tp-caption tp-resizeme" 
-											data-x="['center','center','center','center','center']" data-hoffset="['0','0','0','0','0']" 
-											data-y="['middle','middle','middle','middle','middle']" data-voffset="['-41','-35','-29','17','26']"
-											data-fontsize="['30','28','20','15','12']"
-											data-fontweight="['900','900','900','700','700']"
-											data-lineheight="['62','55','43','29','32']"
-											data-whitespace="['nowrap','nowrap','nowrap','nowrap','normal']"
-											data-width="['auto','auto','auto','auto','300']"
-											data-height="auto"
-											data-basealign="grid"
-
-											data-transform_idle="o:1;"
-
-											data-transform_in="o:1;x:0px;y:[100%];z:0px;s:2000;e:Power4.easeInOut;"
-											data-transform_out="o:1;x:0px;y:[100%];z:0px;s:1000;e:Power4.easeInOut;"
-
-											data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-											data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-
-											data-start="1000"
-
-											data-splitin="none" 
-											data-splitout="none" 
-											data-responsive_offset="on"
-											style="letter-spacing: 4px;"
-											>
-											WE OFFER GREAT QUALITY WITH SHORT TURNAROUND TIME.
-											<br> CALL NOW! +61 499325824
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--/-->
-
-						<!-- Slider JS -->
-						<script type="text/javascript">
-						var tpj=jQuery;			
-							var revapi4;
-							tpj(document).ready(function() {
-								if(tpj("#rev_slider").revolution == undefined){
-									revslider_showDoubleJqueryError("#rev_slider");
-								}else{
-									revapi4 = tpj("#rev_slider").show().revolution({
-										jsFileLocation:"script/",
-										sliderType:"standard",
-										sliderLayout:"fullwidth",
-										dottedOverlay:"none",
-										delay:9000,
-										responsiveLevels:[1920,1189,959,767,479],
-										gridwidth:[1170,940,750,460,300],
-										gridheight:[750,600,550,550,550],
-										lazyType:"none",
-										navigation: {
-											keyboardNavigation:"on",
-											mouseScrollNavigation:"off",
-											onHoverStop:"on",
-											keyboard_direction: "horizontal",
-											touch:{
-												touchenabled:"on",
-												swipe_treshold : 75,
-												swipe_min_touches : 1,
-												drag_block_vertical:false,
-												swipe_direction:"horizontal",
-											},
-											arrows: {
-												style:"preview1",
-												enable:true,
-												hide_onmobile:true,
-												hide_onleave:true,
-												hide_delay:200,
-												hide_delay_mobile:1500,
-												hide_under:0,
-												hide_over:9999,
-												tmp:'',
-												left: {
-													h_align:"left",
-													v_align:"center",
-													h_offset:0,
-													v_offset:0,
-												},
-												right: {
-													h_align:"right",
-													v_align:"center",
-													h_offset:0,
-													v_offset:0,
-												}
-											},
-											bullets: {
-												style:"preview1",
-												enable:true,
-												hide_onmobile:true,
-												hide_onleave:true,
-												hide_delay:200,
-												hide_delay_mobile:1500,
-												hide_under:0,
-												hide_over:9999,
-												direction:"horizontal",
-												h_align:"center",
-												v_align:"bottom",
-												space:10,
-												h_offset:0,
-												v_offset:20,
-												tmp:'<span class="tp-bullet-image"></span><span class="tp-bullet-title"></span>'
-											},
-										},
-										shadow:0,
-										spinner:"spinner1",
-										stopAfterLoops:-1,
-										stopAtSlide:-1,
-										disableProgressBar: "on",
-										shuffle:"off",
-										autoHeight:"off",
-										hideSliderAtLimit:0,
-										hideCaptionAtLimit:0,
-										hideAllCaptionAtLilmit:0,
-										debugMode:false,
-										fallbacks: {
-											simplifyAll:"off",
-											nextSlideOnWindowFocus:"off",
-											disableFocusListener:false,
-										}
-								});
-								}
-							}); /*ready*/
-						</script>					
-					
-					</div>
-					
-				</div>
-
-				<!-- Content -->
-				<div class="template-content">
-					<div class="template-component-header-subheader" style="text-align: center; margin-top: 50px;">
-						<h2>Our Services</h2>
-						<div></div>
-					</div>
-					<div class="template-section template-section-padding-1 template-clear-fix template-main">
-						<ul class="template-layout-33x33x33 template-clear-fix">
-							<li class="template-layout-column-left">
-								<div class="template-component-image">
-									<!-- <a href="media/image/sample/460x306/mobile.jpg"class="template-fancybox" data-fancybox-group="gallery-1"> -->
-										<img src="media/image/sample/460x306/mobile.jpg" alt=""/>
-									<!-- </a>  -->
-									<h3 class="template-home-popup-title">Mobile Welding</h4>
-									<h6>&#8226; &nbsp; Welding </h6>
-									<h6>&#8226; &nbsp; Construction</h6>
-									<h6>&#8226; &nbsp; Steel Repairs</h6>
-									<h6>&#8226; &nbsp; Industrial</h6>
-									<a href="media/image/sample/460x306/mobile.jpg"class="template-fancybox" data-fancybox-group="gallery-1">
-										<h6>Read More...</h6>
-									</a>
-									<div class="template-component-image-description">
-										<h3 class="template-home-popup-title">Mobile Welding</h4>
-										<h4 class="template-home-popup-title">Welding </h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; On-site welding  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Mobile Welding &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Pipe Welds  Post Heat </p>
-										<br>
-										
-										<h6 class="template-home-popup-title">construction</h6>
-										<p class="template-home-popup-content">&#8226; &nbsp;  On-site structural welding</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Earthmoving & Civil Construction Equipment Repairs: Truck, Trailer, Bobcat, Forklift</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Domestic & residential repairs of gates, rails, trailers, boats, balustrades, framing, outdoor furniture </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Contract (short/long term) & Piece Work service – 1st Class welders available </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Light fabrication services</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Emergency 24/7 call out service </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Aluminium, Stainless and Mild steel fabrication, repair and welding </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Welding Tickets </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Construction Induction (white card) </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Elevating Work Platform ( EWp) </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;   High Risk Work</p>
-										<br>
-										
-										<h6 class="template-home-popup-title">Steel Repairs</h6> 
-										<p class="template-home-popup-content">&#8226; &nbsp;  Food Grade Stainless Steel repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Auto & Motorcycle repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural Breakdown of Equipment / Installations </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Commercial Sprinkler Pipe repairs</p>
-										<br>
-										
-										<h6 class="template-home-popup-title">Industrial</h6> 
-										<p class="template-home-popup-content">&#8226; &nbsp;  TIG / MIG / ARC / Plastic / Specialized welding</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Machinery repair</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Staircases</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;Furniture fabrication</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Factory maintenance</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Food industry - stainless steel welding and repair</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural frames</p>
-										<br>
-									</div>
-								</div>
-							</li>
-							
-							<!-- Center column -->
-							<li class="template-layout-column-center">
-								<div class="template-component-image ">
-									<img src="media/image/sample/460x306/steel_fabrication.jpg" alt=""/>
-									<h3 class="template-home-popup-title">Steel Fabrication</h4>
-									<h6>&#8226; &nbsp; Welding </h6>
-									<h6>&#8226; &nbsp; Construction</h6>
-									<h6>&#8226; &nbsp; Steel Repairs</h6>
-									<h6>&#8226; &nbsp; Industrial</h6>
-									<a href="media/image/sample/460x306/steel_fabrication.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
-										<h6> Read More...</h6>
-									</a>
-									<div class="template-component-image-description">
-										<h3>Steel Fabrication</h3>
-										<h4 class="template-home-popup-title">Welding </h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; On-site welding  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Mobile Welding &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Pipe Welds  Post Heat </p>
-										<br>
-										
-										<h6 class="template-home-popup-title">construction</h6>
-										<p class="template-home-popup-content">&#8226; &nbsp;  On-site structural welding</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Earthmoving & Civil Construction Equipment Repairs: Truck, Trailer, Bobcat, Forklift</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Domestic & residential repairs of gates, rails, trailers, boats, balustrades, framing, outdoor furniture </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Contract (short/long term) & Piece Work service – 1st Class welders available </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Light fabrication services</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Emergency 24/7 call out service </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Aluminium, Stainless and Mild steel fabrication, repair and welding </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Welding Tickets </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Construction Induction (white card) </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Elevating Work Platform ( EWp) </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;   High Risk Work</p>
-										<br>
-										
-										<h6 class="template-home-popup-title">Steel Repairs</h6> 
-										<p class="template-home-popup-content">&#8226; &nbsp;  Food Grade Stainless Steel repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Auto & Motorcycle repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural repairs</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural Breakdown of Equipment / Installations </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Commercial Sprinkler Pipe repairs</p>
-										<br>
-										
-										<h6 class="template-home-popup-title">Industrial</h6> 
-										<p class="template-home-popup-content">&#8226; &nbsp;  TIG / MIG / ARC / Plastic / Specialized welding</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Machinery repair</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Staircases</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;Furniture fabrication</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Factory maintenance</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp;  Food industry - stainless steel welding and repair</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Structural frames</p>
-										<br>
-									</div>
-								</div>
-								
-							</li>
-							
-							<!-- Right column -->
-							<li class="template-layout-column-right">
-								<div class="template-component-image ">
-									<img src="media/image/sample/460x306/sliding_gate.jpg" alt=""/>
-									<h3 class="template-home-popup-title">Sliding Door</h3>
-									<h6>&#8226; &nbsp; Manual/Automatic Sliding Gate </h6>
-									<h6>&#8226; &nbsp; Swing Gate</h6>
-									<a href="media/image/sample/460x306/sliding_gate.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
-										<h6>Read More...</h6>
-									</a>
-									<div class="template-component-image-description">
-										<h3 class="template-home-popup-title">Sliding Door</h3>
-										<h6 class="template-home-popup-title">Manual/Automatic Sliding Gate</h6>
-										<p class="template-home-popup-content">&#8226; &nbsp; NEOS 400/600  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; CROSS 30E &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; CROSS 18 AND CROSS 19 </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Geared motor for frequent duty and built-in control board, Opening and closing speed up to 25 cm/sec, Low consumption and energy-saving mode. Ideal for industrial and public entrances, Easy to install, Magnetic mechanical stop. </p>
-										<br>
-
-										<h4 class="template-home-popup-title">Swing Gate</h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; Cubic 6H  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Obbi External Automated System &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Luxo System </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; ARC External Automated System </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; High safety guaranteed by 24V DC power supply to the geared motor, very elegant and simple design </p>
-										<br>
-										
-									</div>
-								</div>
-								
-							</li>
-							
-						</ul>
-						<ul class="template-layout-33x33x33 template-clear-fix">
-							
-							<!-- Left column -->
-							<li class="template-layout-column-left">
-								<div class="template-component-image">
-									<img src="media/image/sample/460x306/workbench.jpg" alt=""/>
-									<h3 class="template-home-popup-title">Workbench</h4>
-									<h6>&#8226; &nbsp; Workbench and Trolleys </h6>
-									<h6>&#8226; &nbsp; Specifications</h6>
-									<h6>&#8226; &nbsp; Additional Services</h6>
-									<a href="media/image/sample/460x306/workbench.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
-										<h6> Read More...</h6>
-									</a>
-									<div class="template-component-image-description">
-										<h3 class="template-home-popup-title">Workbench</h4>
-										<h4 class="template-home-popup-title">Workbench and Trolleys</h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; Heavy Duty workbench  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Light Weight workbench &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Trollies </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Steel Frames </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Steel Shelves </p>
-										<br>
-
-										<h4 class="template-home-popup-title">Specifications</h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; Dimensions: custom any size  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Steel Sheet thickness: 3mm or 5mm &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Steel: 40x40 mm or 50x50 mm </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; SHS Steel Thickness: 1.6 and 2 mm depending on load </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Bench Top: Steel Sheet Or MDF top </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Bottom Shelf: steel sheet or mdf </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Wheel Type: Swivel and Brake </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Colours: As per customer need </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; 100% Australian Made </p>
-										<br>
-
-										<h4 class="template-home-popup-title">Additional Services</h4>
-										<p class="template-home-popup-content">&#8226; &nbsp; Powder coating  &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Splash Back &nbsp; &nbsp;</p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Vice </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Galvanizing </p>
-										<p class="template-home-popup-content">	&#8226; &nbsp; Pegboard </p>
-										<p class="template-home-popup-content">	Above specifications can be customized as per customer need and request</p>
-										<br>
-										
-									</div>
-								</div>
-							</li>
-							
-							<!-- Center column -->
-							<li class="template-layout-column-center">
-								<div class="template-component-image ">
-									
-										<img src="media/image/sample/460x306/precast.jpg" alt=""/>
-										<h3 class="template-home-popup-title">PRECAST CONNECTION WELDING</h3>	
-										<h6>A "precast connection weld" refers to the welding process used in connecting precast concrete elements or components together. </h6>
-										<a href="media/image/sample/460x306/precast.jpg" class="template-fancybox" data-fancybox-group="gallery-1">
-											<h6> Read More...</h6>
-										</a>
-										<div class="template-component-image-description">
-											<h3 class="template-home-popup-title">PRECAST CONNECTION WELDING</h3>
-											<p class="template-padding-reset">
-												A "precast connection weld" refers to the welding process used in connecting precast concrete elements or components together. Precast concrete is a construction technique where concrete elements, such as beams, columns, panels, and slabs, are cast in a controlled environment (typically a factory) before being transported to a construction site and assembled to create a building or structure.
-											</p>
-										</div>
-										
-										
-							</div>
-							</li>							
-						</ul>
-					</div>
-					
-					<!-- Section -->
-					<div class="template-section template-clear-fix template-main">
-						
-						<!-- Header + subheader -->
-						<div class="template-component-header-subheader ">
-							<h2>Our gallery</h2>
-							<div></div>
-							<!-- <span>Latest Projects</span> -->
-						</div>	
-						
-						<!-- Gallery -->
-						<div class="template-component-gallery">
-							<ul class="template-component-gallery-filter-list">
-								<li>
-								  <a
-									href="#all-images"
-									class="template-filter-all template-state-selected"
-									>All</a>
-								</li>
-								<li>
-								  <a href="#mobile-welding" class="template-filter-mobile-welding"
-									>Mobile Welding</a>
-								</li>
-								<li>
-								  <a
-									href="#steel-fabrication"
-									class="template-filter-steel-fabrication"
-									>Steel Fabrication</a>
-								</li>
-								<li>
-								  <a href="#sliding-door" class="template-filter-sliding-door"
-									>Sliding Door</a>
-								</li>
-								<li>
-								  <a href="#workbench" class="template-filter-workbench"
-									>Workbench</a>
-								</li>
-								<li>
-								  <a
-									href="#precast-connection-welding"
-									class="template-filter-precast-connection-welding"
-									>PRECAST CONNECTION WELDING</a>
-								</li>
-							  </ul>
-
-							<!-- Images list -->
-							<ul class="template-component-gallery-image-list" >
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-1.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-2.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-3.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-4.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-5.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-6.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-7.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-8.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-9.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-10.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-mobile-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/mobile-welding-11.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-1.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-2.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-3.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-4.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-5.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-precast-connection-welding">
-									<div class="template-component-image">
-										<img src="media/image/gallery/precast-6.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-steel-fabrication">
-									<div class="template-component-image">
-										<img src="media/image/gallery/steel-1.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-steel-fabrication">
-									<div class="template-component-image">
-										<img src="media/image/gallery/steel-2.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-steel-fabrication">
-									<div class="template-component-image">
-										<img src="media/image/gallery/steel-3.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-steel-fabrication">
-									<div class="template-component-image">
-										<img src="media/image/gallery/steel-4.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/work.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-1.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-2.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-3.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-4.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-5.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-6.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-7.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-8.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-workbench">
-									<div class="template-component-image">
-										<img src="media/image/gallery/workbench-9.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-sliding-door">
-									<div class="template-component-image">
-										<img src="media/image/gallery/sliding-1.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-sliding-door">
-									<div class="template-component-image">
-										<img src="media/image/gallery/sliding-2.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-								<li class="template-filter-sliding-door">
-									<div class="template-component-image">
-										<img src="media/image/gallery/sliding-3.jpg" class="gallery-images" alt="" />
-									</div>
-								</li>
-						</ul>
-
-					</div>	
-						
-						<!-- Button -->
-						<div class="template-align-center" style="display: flex;justify-content: center;">
-							<a href="gallery.html" class="template-component-button">Browse More Projects</a>
-						</div>
-						
-					</div>		
-					
-					<!-- Section -->
-					<div class="template-section template-section-padding-reset template-clear-fix">
-						
-						<!-- Flex layout 50x50% -->
-						<div class="template-align-center">
-							
-							<!-- Left column -->
-							<div>
-								
-								<!-- Header + subheader -->
-								<div class="template-component-header-subheader">
-									<h2>Testimonials</h2>
-									<div></div>
-									<span>Our customers love us</span>
-								</div>		
-								
-								<!-- Space -->		
-								<div class="template-component-space template-component-space-2"></div>
-								
-								<!-- Testimonials list -->							
-								<div class="template-component-testimonial-list template-clear-fix">
-									
-									<!-- Content -->
-									<ul class="template-align-center">
-										<li>
-											<p></p>
-											<h6></h6>
-											<span></span>
-										</li>
-										<!-- <li>
+            <!-- Testimonials list -->
+            <div class="template-component-testimonial-list template-clear-fix">
+              <!-- Content -->
+              <ul class="template-align-center">
+                <li>
+                  <p></p>
+                  <h6></h6>
+                  <span></span>
+                </li>
+                <!-- <li>
 											<p>I think Auto Spa is the best car washers ever. Love the price, convenience and customer service. Thanks so much! My car looks like new. I will definitely come again.</p>
 											<h6>David Magnus</h6>
 											<span>Nissan Titan X5</span>
 										</li> -->
-										<!-- <li>
+                <!-- <li>
 											<p>Finally a car wash that does pay attention to the detail. I have a little extra time and money and I let them do the full detail and it always has turned out great.</p>
 											<h6>Josh Williams</h6>
 											<span>Toyota Avensis</span>
 										</li> -->
-									</ul>
-									
-									<!-- Navigation -->
-									<!-- <div class="template-component-testimonial-list-navigation">
+              </ul>
+
+              <!-- Navigation -->
+              <!-- <div class="template-component-testimonial-list-navigation">
 										<a href="#" class="template-component-testimonial-list-navigation-left template-icon-meta-arrow-large-rl"></a>
 										<span class="template-component-testimonial-list-navigation-center template-icon-feature-testimonials"></span>
 										<a href="#" class="template-component-testimonial-list-navigation-right template-icon-meta-arrow-large-rl"></a>
 									</div> -->
-									
-								</div>
-								
-							</div>
-							
-							
-						</div>
-						
-					</div>
-					
-					<!-- Section -->
-					<div class="template-section template-section-padding-1 template-clear-fix template-main">
-						
-						<!-- Features list -->
-						<div class="template-component-feature-list template-component-feature-list-position-left template-clear-fix">
-							
-							<!-- Layout 33x33x33% -->
-							<ul class="template-layout-33x33x33 template-clear-fix">
-								
-								<!-- Left column -->
-								<li class="template-layout-column-left">
-									<span class="template-icon-feature-phone-circle"></span>
-									<h5>Call Us At</h5>
-									<p>
-										+61 499325824<br/>
-										sale@hmsteelwork.com<br/>
-									</p>
-								</li>
-								
-								<!-- Center column -->
-								<li class="template-layout-column-center">
-									<span class="template-icon-feature-location-map"></span>
-									<h5>Our Address</h5>
-									<p>
-										7 Vinorosso St Wollert VIC 3750<br/>
-										Melbourne Australia
-									</p>
-								</li>
-								
-								<!-- Right column -->
-								<li class="template-layout-column-right">
-									<span class="template-icon-feature-clock"></span>
-									<h5>Working hours</h5>
-									<p>
-										Monday - Friday: 10 am - 10 pm<br/>
-										Saturday: 10 am - 3 pm
-									</p>
-								</li>
-								
-							</ul>
-						</div>
-						
-					</div>
-					
-					<!-- Google Maps -->
-					<!-- <div class="template-section template-section-padding-reset template-clear-fix">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section -->
+      <div
+        class="template-section template-section-padding-1 template-clear-fix template-main"
+      >
+        <!-- Features list -->
+        <div
+          class="template-component-feature-list template-component-feature-list-position-left template-clear-fix"
+        >
+          <!-- Layout 33x33x33% -->
+          <ul class="template-layout-33x33x33 template-clear-fix">
+            <!-- Left column -->
+            <li class="template-layout-column-left">
+              <span class="template-icon-feature-phone-circle"></span>
+              <h5>Call Us At</h5>
+              <p>
+                +61 499325824<br />
+                sale@hmsteelwork.com<br />
+              </p>
+            </li>
+
+            <!-- Center column -->
+            <li class="template-layout-column-center">
+              <span class="template-icon-feature-location-map"></span>
+              <h5>Our Address</h5>
+              <p>
+                7 Vinorosso St Wollert VIC 3750<br />
+                Melbourne Australia
+              </p>
+            </li>
+
+            <!-- Right column -->
+            <li class="template-layout-column-right">
+              <span class="template-icon-feature-clock"></span>
+              <h5>Working hours</h5>
+              <p>
+                Monday - Friday: 10 am - 10 pm<br />
+                Saturday: 10 am - 3 pm
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Google Maps -->
+      <!-- <div class="template-section template-section-padding-reset template-clear-fix">
 									
 						
 						<div class="template-component-google-map">
@@ -953,79 +1427,88 @@
 						</script>					
 					
 					</div> -->
-					
-				</div>
-				
-				<!-- Footer -->
-				<div class="template-footer">
-					
-					<div class="template-main">
-						
-						<!-- Footer top -->
-						<div class="template-footer-top">
-							
-							<!-- Layout 25x25x25x25 -->
-							<div class="template-layout-25x25x25x25 template-clear-fix">
-								
-								<!-- Left column -->
-								<div class="template-layout-column-left">
-									<h6>About</h6>
-									<p> Founded by Mr. Simranjeet Singh, a 
-									<br> Melbourne-based enterprise dedicated
-									<br> to delivering impeccable welding solutions
-									<br> for your property or business.
-									<br> Our hallmark is precision.
-									</p>
-									<img src="media/image/logo.png" alt="" class="template-logo"  style="width: 80px;height: 80px;"/>
-								</div>
+    </div>
 
-								<!-- Center left column -->
-								<div class="template-layout-column-center-left">
-									<h6>Services</h6>
-									<ul class="template-list-reset">
-										<li><a href="service.html">Mobile Welding</a></li>
-										<li><a href="service.html">Steel Fabrication</a></li>
-										<li><a href="service.html">Sliding Door</a></li>
-										<li><a href="service.html">Workbench</a></li>
-										<li><a href="service.html">Precast Connection Welding</a></li>
-										
-									</ul>									
-								</div>
-								
-								<!-- Center right column -->
-								<div class="template-layout-column-center-right">
-									<h6>Company</h6>
-									<ul class="template-list-reset">
-										<li><a href="contact.html">About Us</a></li>
-										<li><a href="gallery.html">Gallery</a></li>
-										<li><a href="service.html">Our Services</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</div>
-								
-								<!-- Right column -->
-								<div class="template-layout-column-right">
-									<h6>Newsletter</h6>
-									<form class="template-component-newsletter-form">
-										<div class="template-component-form-field">
-											<label for="newsletter-form-email">Your e-mail address *</label>
-											<input type="text" name="newsletter-form-email" id="newsletter-form-email"/>
-										</div>
-										<div class="template-margin-top-2">
-											<input type="submit" value="Subscribe" class="template-component-button" name="newsletter-form-submit" id="newsletter-form-submit"/>
-										</div>
-									</form>
-								</div>
-								
-							</div>
-							
-						</div>
-						
-						<!-- Footer bottom -->
-						<div class="template-footer-bottom">
-							
-							<!-- Social icon list -->
-							<!-- <ul class="template-component-social-icon-list template-component-social-icon-list-2">
+    <!-- Footer -->
+    <div class="template-footer">
+      <div class="template-main">
+        <!-- Footer top -->
+        <div class="template-footer-top">
+          <!-- Layout 25x25x25x25 -->
+          <div class="template-layout-25x25x25x25 template-clear-fix">
+            <!-- Left column -->
+            <div class="template-layout-column-left">
+              <h6>About</h6>
+              <p>
+                Founded by Mr. Simranjeet Singh, a <br />
+                Melbourne-based enterprise dedicated <br />
+                to delivering impeccable welding solutions <br />
+                for your property or business. <br />
+                Our hallmark is precision.
+              </p>
+              <img
+                src="media/image/logo.png"
+                alt=""
+                class="template-logo"
+                style="width: 80px; height: 80px"
+              />
+            </div>
+
+            <!-- Center left column -->
+            <div class="template-layout-column-center-left">
+              <h6>Services</h6>
+              <ul class="template-list-reset">
+                <li><a href="service.html">Mobile Welding</a></li>
+                <li><a href="service.html">Steel Fabrication</a></li>
+                <li><a href="service.html">Sliding Door</a></li>
+                <li><a href="service.html">Workbench</a></li>
+                <li><a href="service.html">Precast Connection Welding</a></li>
+              </ul>
+            </div>
+
+            <!-- Center right column -->
+            <div class="template-layout-column-center-right">
+              <h6>Company</h6>
+              <ul class="template-list-reset">
+                <li><a href="contact.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="service.html">Our Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Right column -->
+            <div class="template-layout-column-right">
+              <h6>Newsletter</h6>
+              <form class="template-component-newsletter-form">
+                <div class="template-component-form-field">
+                  <label for="newsletter-form-email"
+                    >Your e-mail address *</label
+                  >
+                  <input
+                    type="text"
+                    name="newsletter-form-email"
+                    id="newsletter-form-email"
+                  />
+                </div>
+                <div class="template-margin-top-2">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    class="template-component-button"
+                    name="newsletter-form-submit"
+                    id="newsletter-form-submit"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="template-footer-bottom">
+          <!-- Social icon list -->
+          <!-- <ul class="template-component-social-icon-list template-component-social-icon-list-2">
 								<li><a href="https://twitter.com/quanticalabs" class="template-icon-social-twitter" target="_blank"></a></li>
 								<li><a href="https://www.facebook.com/QuanticaLabs" class="template-icon-social-facebook" target="_blank"></a></li>
 								<li><a href="https://dribbble.com/quanticalabs" class="template-icon-social-dribbble" target="_blank"></a></li>
@@ -1033,89 +1516,183 @@
 								<li><a href="https://www.behance.net/quanticalabs" class="template-icon-social-behance" target="_blank"></a></li>
 								<li><a href="https://www.youtube.com/user/quanticalabs" class="template-icon-social-youtube" target="_blank"></a></li>
 							</ul> -->
-							
-							<!-- Copyright -->
-							<div class="template-footer-bottom-copyright">
-								By HM Steel & Mobile Welding</a> &copy; 2023 
-							</div>
-							
-						</div>
-						
-					</div>
 
-				</div>
+          <!-- Copyright -->
+          <div class="template-footer-bottom-copyright">
+            <a>By HM Steel & Mobile Welding</a> &copy; 2023
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<!-- Search box -->
-				<div class="template-component-search-form">
-					<div></div>
-					<form>
-						<div>
-							<input type="search" name="search"/>
-							<span class="template-icon-meta-search"></span>
-							<input type="submit" name="submit" value=""/>
-						</div>
-					</form>
-				</div>
-				
-				<!-- Go to top button -->
-				<a href="#go-to-top" class="template-component-go-to-top template-icon-meta-arrow-large-tb"></a>
-				
-				<!-- Wrapper for date picker -->
-				<div id="dtBox"></div>
-				
-				<!-- JS files -->
-				<script type="text/javascript" src="script/jquery-ui.min.js"></script>
-				<script type="text/javascript" src="script/superfish.min.js"></script>
-				<script type="text/javascript" src="script/jquery.easing.js"></script>
-				<script type="text/javascript" src="script/jquery.blockUI.js"></script>
-				<script type="text/javascript" src="script/jquery.qtip.min.js"></script>
-				<script type="text/javascript" src="script/jquery.fancybox.js"></script>
-				<script type="text/javascript" src="script/isotope.pkgd.min.js"></script>
-				<script type="text/javascript" src="script/jquery.actual.min.js"></script>
-				<script type="text/javascript" src="script/jquery.flexnav.min.js"></script>
-				<script type="text/javascript" src="script/jquery.waypoints.min.js"></script>
-				<script type="text/javascript" src="script/sticky.min.js"></script>
-				<script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
-				<script type="text/javascript" src="script/jquery.fancybox-media.js"></script>
-				<script type="text/javascript" src="script/jquery.fancybox-buttons.js"></script>
-				<script type="text/javascript" src="script/jquery.carouFredSel.packed.js"></script>
-				<script type="text/javascript" src="script/jquery.responsiveElement.js"></script>
-				<script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
-				<script type="text/javascript" src="script/DateTimePicker.min.js"></script>
-				<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>  
-				
-				<!-- Revolution Slider files -->
-				<script type="text/javascript" src="script/revolution/jquery.themepunch.revolution.min.js"></script>
-				<script type="text/javascript" src="script/revolution/jquery.themepunch.tools.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.actions.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.carousel.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.migration.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.navigation.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.parallax.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-				<script type="text/javascript" src="script/revolution/extensions/revolution.extension.video.min.js"></script>
+    <!-- Search box -->
+    <div class="template-component-search-form">
+      <div></div>
+      <form>
+        <div>
+          <input type="search" name="search" />
+          <span class="template-icon-meta-search"></span>
+          <input type="submit" name="submit" value="" />
+        </div>
+      </form>
+    </div>
 
-				<!-- Plugins files -->
-				<script type="text/javascript" src="plugin/booking/jquery.booking.js"></script>
-				
-				<!-- Components files -->
-				<script type="text/javascript" src="script/template/jquery.template.tab.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.image.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.helper.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.header.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.counter.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.gallery.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.goToTop.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.fancybox.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.moreLess.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.googleMap.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.accordion.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.searchForm.js"></script>
-				<script type="text/javascript" src="script/template/jquery.template.testimonial.js"></script>
-				<script type="text/javascript" src="script/public.js"></script>
+    <!-- Go to top button -->
+    <a
+      href="#go-to-top"
+      class="template-component-go-to-top template-icon-meta-arrow-large-tb"
+    ></a>
 
-			</body>
-			
-		</html>
+    <!-- Wrapper for date picker -->
+    <div id="dtBox"></div>
+
+    <!-- JS files -->
+    <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script/superfish.min.js"></script>
+    <script type="text/javascript" src="script/jquery.easing.js"></script>
+    <script type="text/javascript" src="script/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="script/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="script/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="script/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="script/jquery.actual.min.js"></script>
+    <script type="text/javascript" src="script/jquery.flexnav.min.js"></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.waypoints.min.js"
+    ></script>
+    <script type="text/javascript" src="script/sticky.min.js"></script>
+    <script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.fancybox-media.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.fancybox-buttons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.carouFredSel.packed.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.responsiveElement.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/jquery.touchSwipe.min.js"
+    ></script>
+    <script type="text/javascript" src="script/DateTimePicker.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.google.com/maps/api/js"
+    ></script>
+
+    <!-- Revolution Slider files -->
+    <script
+      type="text/javascript"
+      src="script/revolution/jquery.themepunch.revolution.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/revolution/extensions/revolution.extension.video.min.js"
+    ></script>
+
+    <!-- Plugins files -->
+    <script
+      type="text/javascript"
+      src="plugin/booking/jquery.booking.js"
+    ></script>
+
+    <!-- Components files -->
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.tab.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.image.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.helper.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.header.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.counter.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.gallery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.goToTop.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.fancybox.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.moreLess.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.googleMap.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.accordion.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.searchForm.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="script/template/jquery.template.testimonial.js"
+    ></script>
+    <script type="text/javascript" src="script/public.js"></script>
+  </body>
+</html>

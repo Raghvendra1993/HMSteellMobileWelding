@@ -4983,6 +4983,17 @@ ul.template-widget-list
 	margin-bottom: 1em;
 }
 
+@media only screen and (max-width: 767px) {
+	.fancybox-wrap {
+		width: 80% !important;
+		left: 10px;
+	}
+
+	.fancybox-inner {
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
 .gallery-images {
 	width: 220px ;
 	border: 1px solid #fff;

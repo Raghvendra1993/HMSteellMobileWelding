@@ -441,7 +441,6 @@ body,*,input,textarea
 	.template-component-booking .template-component-booking-service-list>li>div.template-component-booking-service-name .template-component-more-content,
 	.template-component-testimonial-list ul>li>p,
 	.flexnav li a,
-	.tparrows.preview1:hover::after,
 	.dtpicker-header .dtpicker-title,
 	.dtpicker-header .dtpicker-value,
 	.dtpicker-components .dtpicker-comp>*,
@@ -449,6 +448,10 @@ body,*,input,textarea
 	.dtpicker-overlay .dtpicker-compValue:hover,
 	.dtpicker-buttonCont .dtpicker-button
 	{
+		color:white;
+	}
+
+	.tparrows.preview1:hover::after{
 		color:white;
 	}
 	
@@ -623,10 +626,14 @@ body,*,input,textarea
 		background:rgba(255,255,255,0.5);
 	}
 	
-	.tparrows.preview1::after,
-	.tp-bullets.preview1 .tp-bullet
+	.tparrows.preview1::after
 	{
-		background:#a1a1a1;
+		background:transparent;
+	}
+
+	
+	.tp-bullets.preview1 .tp-bullet{
+		background:#A8B1B6;
 	}
 	
 	.fancybox-skin
@@ -634,11 +641,15 @@ body,*,input,textarea
 		background:#1B1B1B;
 	}
 	
-	.tparrows.preview1:hover::after,
-	.tp-bullets.preview1 .tp-bullet:hover,
-	.tp-bullets.preview1 .tp-bullet.selected 
+	.tparrows.preview1:hover::after
 	{
-		background:#FFFFFF !important;
+		background:#1B1B1B !important;
+	}
+
+	
+	.tp-bullets.preview1 .tp-bullet:hover,
+	.tp-bullets.preview1 .tp-bullet.selected {
+		background:#fff !important;
 	}
 
 	.template-component-button,

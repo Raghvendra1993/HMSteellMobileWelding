@@ -4970,6 +4970,19 @@ ul.template-widget-list
 	padding-bottom: 0px;
 }
 
+.fancybox-overlay .template-home-popup-content {
+	font-size: 1.1rem;
+}
+
+.fancybox-overlay .template-home-popup-title {
+	margin-top: 10px;
+}
+
+.fancybox-title h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 .gallery-images {
 	width: 220px ;
 	border: 1px solid #fff;

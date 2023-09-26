@@ -1800,7 +1800,7 @@ form
 				z-index:2;
 				float:right;
 				position:relative;
-				margin:25px 30px 29px 0px;
+				margin:15px 30px 10px 0px;
 			}
 			
 				.template-header .template-header-top .template-header-top-icon-list a
@@ -1821,7 +1821,7 @@ form
 				
 				.template-header .template-header-top .template-header-top-icon-list .template-icon-meta-menu:before
 				{
-					top:-2px;
+					top:-10px;
 					position:relative;
 				}
 		
@@ -4269,7 +4269,7 @@ ul.template-widget-list
 						line-height:28px;
 						letter-spacing:1px;
 						text-transform:uppercase;
-						padding:36px 20px 36px 20px;
+						padding:37px 20px 37px 20px;
 					}
 					
 						.template-component-menu-default>.sf-menu>li ul
@@ -4314,6 +4314,11 @@ ul.template-widget-list
 		/**********************************************************************/
 		/* Component / Menu	/ Responsive									  */
 		/**********************************************************************/
+
+
+		.template-component-menu-default{
+			line-height: 0px;
+		}
 
 		.template-component-menu-responsive
 		{
@@ -4754,7 +4759,7 @@ ul.template-widget-list
 
 	.template-component-social-icon-list
 	{
-		margin:0px;
+		margin:10px;
 		padding:0px;
 		list-style-type:none;
 	}

@@ -503,6 +503,14 @@ body,*,input,textarea
 	{
 		color:#E2E6E7;
 	}
+
+	a, 
+	.template-padding-reset{
+		color: white;
+		cursor: pointer;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
 		
 	/**************************************************************************/
 	/* Color / Background													  */
@@ -618,12 +626,12 @@ body,*,input,textarea
 	.tparrows.preview1::after,
 	.tp-bullets.preview1 .tp-bullet
 	{
-		background:rgba(0,0,0,0.15);
+		background:#a1a1a1;
 	}
 	
 	.fancybox-skin
 	{
-		background:#FFFFFF;
+		background:#1B1B1B;
 	}
 	
 	.tparrows.preview1:hover::after,
@@ -4935,4 +4943,20 @@ ul.template-widget-list
 	border:8px solid #fff ;
 	border-radius: 10px;
 	height: 200px;
+}
+
+.template-home-popup-title{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.template-home-popup-content{
+	padding-bottom: 0px;
+}
+
+.gallery-images {
+	width: 220px ;
+	 border:8px solid #fff ;
+	  border-radius: 10px;
+	  height: 200px;
 }

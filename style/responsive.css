@@ -594,3 +594,38 @@ body>.template-component-search-form>form>div>input[type="search"]
 						margin-left:0px;
 					}			
 }
+
+/* Makes all the images in the Our Services section same height */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.services .template-component-image img {
+	min-height: 151px;
+	}
+
+	.services ul li:nth-child(2) img,
+	.services ul li:nth-child(3) img {
+		max-height: 151px;
+	}
+}
+
+@media only screen and (min-width:960px) and (max-width:1169px) {
+.services .template-component-image img {
+	min-height: 189px;
+}
+
+.services ul li:nth-child(2) img,
+.services ul li:nth-child(3) img {
+	max-height: 189px;
+}
+}
+
+@media only screen and (min-width: 1170px) {
+	.services .template-component-image img {
+		min-height: 235px;
+	}
+
+	.services ul li:nth-child(2) img,
+	.services ul li:nth-child(3) img {
+		max-height: 235px;
+	}
+}

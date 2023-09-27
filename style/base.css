@@ -1823,9 +1823,9 @@ form
 				{
 					top:2px;
 					display:none;
-					font-size:24px;
+					font-size:40px;
 					margin-left:10px;
-					border-width:1px;
+					/* border-width:1px; */
 					border-style:solid;
 					position:relative;
 				}

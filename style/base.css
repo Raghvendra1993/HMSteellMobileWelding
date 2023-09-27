@@ -1216,7 +1216,7 @@ form
 	.template-layout-column-right .template-component-form-field,
 	.template-layout-column-center .template-component-form-field 
 	{
-		border-left-width:0px;
+		border-left-width:1px;
 	}
 	
 	.template-layout-column-right.template-responsive-column-a .template-component-form-field,

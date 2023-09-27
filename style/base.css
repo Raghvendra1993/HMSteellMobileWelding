@@ -5006,3 +5006,7 @@ ul.template-widget-list
 	border-radius: 10px;
 	height: 200px;
 }
+
+.template-content .services {
+	padding-top: 60px;
+}

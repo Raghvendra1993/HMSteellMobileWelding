@@ -5010,3 +5010,11 @@ ul.template-widget-list
 .template-content .services {
 	padding-top: 60px;
 }
+
+.template-section
+.template-component-gallery-image-list li {
+	opacity: 1 !important;
+transition-property: none !important;
+transition-duration: 0s !important;
+transition-delay: 0ms !important;
+}

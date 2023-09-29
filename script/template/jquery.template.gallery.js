@@ -123,13 +123,13 @@
 				}
 			});	
 			
-			if(bind)
-			{
-				$(window).resize(function()
-				{
-					$self.createIsotope(filter,false);
-				});
-			}
+			// if(bind)
+			// {
+			// 	$(window).resize(function()
+			// 	{
+			// 		$self.createIsotope(filter,false);
+			// 	});
+			// }
 		};
 		
 		/**********************************************************************/

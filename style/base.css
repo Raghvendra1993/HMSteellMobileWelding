@@ -3923,10 +3923,10 @@ ul.template-widget-list
 				.template-component-gallery .template-component-gallery-filter-list>li>a
 				{
 					display:block;
-					min-width: 134px;
+					min-width: 200px;
 					max-width:max-content;
 					border-style:solid;
-					padding:12px 15px 11px 15px;
+					padding:12px 0px 11px 0px;
 					border-width:0px 0px 1px 0px;
 				}
 				

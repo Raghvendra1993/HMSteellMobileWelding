@@ -234,22 +234,26 @@
                   type="text"
                   name="contact-form-name"
                   id="contact-form-name"
+                  required
                 />
               </div>
               <div class="template-component-form-field template-state-block">
                 <label for="contact-form-email">Your E-mail *</label>
                 <input
-                  type="text"
+                  type="email"
                   name="contact-form-email"
                   id="contact-form-email"
+                  required
                 />
               </div>
               <div class="template-component-form-field template-state-block">
                 <label for="contact-form-phone">Phone Number</label>
                 <input
-                  type="text"
                   name="contact-form-phone"
                   id="contact-form-phone"
+                  minlength="10"
+                  maxlength="10"
+                  required
                 />
               </div>
             </li>
@@ -265,6 +269,7 @@
                   cols="1"
                   name="contact-form-message"
                   id="contact-form-message"
+                  required
                 ></textarea>
               </div>
             </li>

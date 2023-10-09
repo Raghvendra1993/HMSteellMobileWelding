@@ -28,8 +28,8 @@
 				{
 					if((++i)===componentLength)
 					{
-						$self.createIsotope('');
-
+						$self.createIsotope('.template-filter-workbench');
+						
 						var filterList=$this.children('.template-component-gallery-filter-list');
 						if(filterList.length===1)
 						{
